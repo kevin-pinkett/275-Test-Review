@@ -1,5 +1,8 @@
-# React TypeScript Tome Tasks
+# React TypeScript Tome Test Review
 
-Hello! This repository has been pre-configured with eslint, prettier, and a github actions workflow to automatically lint and format your code on every push. It'll also deploy your site for you.
+Hey all! These are some practice questions for you guys to use to review for the test. It is advised that you take attempt to complete the components on paper first and then use VSCode to validate your solutions. Feel free to come to the TAs with questions or reference the solutions provided.
 
-You'll complete programming problems by merging in upstream branches. Check out the textbook for more information: <https://frontend-fun.github.io/react-hooks-typescript-tome/>
+Happy studying!
+
+This repository has been pre-configured with eslint, prettier, and a github actions workflow to automatically lint and format your code on every push. It'll also deploy your site for you.
+
