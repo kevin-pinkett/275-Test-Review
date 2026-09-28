@@ -4,12 +4,13 @@ import "./App.css";
 function App(): React.JSX.Element {
     return (
         <div className="App">
-            <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript
-            </header>
+            <header className="App-header">UD CISC275 Test Review</header>
             <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
+                Edit the components in <code>src/practice</code> and verify
+                output here.
+            </p>
+            <p>
+                Run <code>npm run test</code> to check against the unit tests
             </p>
         </div>
     );
