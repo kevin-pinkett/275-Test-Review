@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import EvenOdd from "./solutions/EvenOdd";
 import FavoriteSongs from "./solutions/FavoriteSongs";
+import StudentProfile from "./solutions/StudentProfile";
 
 function App(): React.JSX.Element {
     return (
@@ -16,6 +17,7 @@ function App(): React.JSX.Element {
             </p>
             <EvenOdd/>
             <FavoriteSongs/>
+            <StudentProfile/>
         </div>
     );
 }
