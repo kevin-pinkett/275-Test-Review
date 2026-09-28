@@ -3,6 +3,7 @@ import "./App.css";
 import EvenOdd from "./solutions/EvenOdd";
 import FavoriteSongs from "./solutions/FavoriteSongs";
 import StudentProfile from "./solutions/StudentProfile";
+import Scoreboard from "./solutions/Scoreboard";
 
 function App(): React.JSX.Element {
     return (
@@ -18,6 +19,7 @@ function App(): React.JSX.Element {
             <EvenOdd/>
             <FavoriteSongs/>
             <StudentProfile/>
+            <Scoreboard/>
         </div>
     );
 }
