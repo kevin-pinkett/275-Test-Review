@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import EvenOdd from "./solutions/EvenOdd";
 
 function App(): React.JSX.Element {
     return (
@@ -12,6 +13,7 @@ function App(): React.JSX.Element {
             <p>
                 Run <code>npm run test</code> to check against the unit tests
             </p>
+            <EvenOdd/>
         </div>
     );
 }
