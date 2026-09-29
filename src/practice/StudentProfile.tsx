@@ -1,60 +1,41 @@
-import React, { useState } from "react";
-import Button from "react-bootstrap/esm/Button";
+import React from "react";
 
-interface Student {
-    name: string;
-    major: string;
-    year: number;
-    honors: boolean;
-
-}
+/**
+ * Student Profile
+ *
+ * Define a component named StudentProfile.
+ *
+ * Its state should be ONE object containing:
+ * - name: string
+ * - major: string
+ * - year: number
+ * - honors: boolean
+ * 
+ * Display all three pieces of information.
+ * 
+ * The component should have three buttons:
+ * 
+ *    "Change Name"
+ *        -> changes the name to your name
+ * 
+ *    "Change Major"
+ *        -> changes the major to your major
+ * 
+ *    "Change Year"
+ *      -> changes the year to your year
+ * 
+ *   "Change Honors"
+ *       -> change to whether or not you are in honors
+ * 
+ * The student should be stored as ONE object in state,
+ * rather than having four separate pieces of state.
+*/
 
 export default function StudentProfile(): React.JSX.Element {
-    const [student, setStudent] = useState<Student>({ name: "John Doe", major: "Finance", year: 3, honors: true });
-
     return (
         <div>
             <h2>Student Profile</h2>
-            <p>Name: {student.name}</p>
-            <p>Major: {student.major}</p>
-            <p>Year: {student.year}</p>
-            <p>Honors: {student.honors ? "Yes" : "No"}</p>
-            <p>Use the buttons to fill in my information instead</p>
-            <Button
-                onClick={() => {
-                    setStudent({ ...student, name: "Kevin" });
-                }}
-            >
-                Change Name
-            </Button>
-            <Button
-                onClick={() => {
-                    setStudent({ ...student, major: "Computer Science" });
-                }}
-            >
-                Change Major
-            </Button>
-            <Button
-                onClick={() => {
-                    setStudent({ ...student, year: 4 });
-                }}
-            >
-                Change Year
-            </Button>
-            <Button
-                onClick={() => {
-                    setStudent({ ...student, honors: false });
-                }}
-            >
-                Change Honors
-            </Button>
-            <Button
-                onClick={() => {
-                    setStudent({ name: "John Doe", major: "Finance", year: 3, honors: true });
-                }}
-            >
-                Reset
-            </Button>
+            {/* Define your component */}
         </div>
     );
 }
