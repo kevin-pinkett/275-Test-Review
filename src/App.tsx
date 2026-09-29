@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import EvenOdd from "./solutions/SolvedEvenOdd";
-import FavoriteSongs from "./solutions/SolvedFavoriteSongs";
-import StudentProfile from "./solutions/SolvedStudentProfile";
-import Scoreboard from "./solutions/SolvedScoreboard";
+import SolvedEvenOdd from "./solutions/SolvedEvenOdd";
+import SolvedFavoriteSongs from "./solutions/SolvedFavoriteSongs";
+import SolvedStudentProfile from "./solutions/SolvedStudentProfile";
+import SolvedScoreboard from "./solutions/SolvedScoreboard";
 import Button from "react-bootstrap/esm/Button";
 
 function App(): React.JSX.Element {
@@ -25,13 +25,13 @@ function App(): React.JSX.Element {
             {solutionsVisible && (
                 <div>
                     <hr />
-                    <EvenOdd />
+                    <SolvedEvenOdd />
                     <hr />
-                    <FavoriteSongs />
+                    <SolvedFavoriteSongs />
                     <hr />
-                    <StudentProfile />
+                    <SolvedStudentProfile />
                     <hr />
-                    <Scoreboard />
+                    <SolvedScoreboard />
                     <hr />
                 </div>
             )}

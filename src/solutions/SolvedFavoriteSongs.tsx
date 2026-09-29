@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 
-export default function FavoriteSongs(): React.JSX.Element {
+export default function SolvedFavoriteSongs(): React.JSX.Element {
     const [songs, setSongs] = useState<string[]>(["Survival Tactics: Joey Bada$$", "peter pan.: Brent Faiyaz", "Distant Lover: Marvin Gaye"]);
     const [favoriteSongs, setFavoriteSongs] = useState<string[]>([]);
  
