@@ -1,62 +1,35 @@
-import React, { useState } from "react";
-import Button from "react-bootstrap/esm/Button";
+import React from "react";
+
+
+/**
+ * Favorite Songs
+ * Define a component named FavoriteSongs. It stores an array of strings and
+ * initially contains three songs you like.
+ * 
+ * Display the songs in a list.
+ * 
+ * Each song should have a "Favorite" button. When clicked, the song
+ * should be added to a separate array of favorite songs.
+ * 
+ * A song should NOT be added to the favorites if it is already there.
+ * 
+ * Below the list, display:
+ * 
+ *  Favorite songs: ...
+ * 
+ * where the favorite songs are displayed.
+ * 
+ * Favorite songs should instead have an "Unfavorite" button. When clicked, the song
+ * should be removed from the favorites list and added back to the original list.
+ * 
+ */
 
 export default function FavoriteSongs(): React.JSX.Element {
-    const [songs, setSongs] = useState<string[]>(["Survival Tactics: Joey Bada$$", "peter pan.: Brent Faiyaz", "Distant Lover: Marvin Gaye"]);
-    const [favoriteSongs, setFavoriteSongs] = useState<string[]>([]);
- 
-    /**
-     * 
-     * You can ignore the styling of this component. You are only being assessed on
-     * the functionality of the component. The styling is only to make it easier to
-     * visualize what's happening.
-     * 
-     */
+
     return (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <div>
             <h2>Favorite Songs</h2>
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "row",
-                    alignItems: "center",
-                }}
-            >
-                <div>
-                    <p>Songs: </p>
-                    {songs.map((song, index) => (
-                        <div key={index}>
-                            <p>{song}</p>
-                            <Button
-                                onClick={() => {
-                                    setFavoriteSongs([...favoriteSongs, song]);
-                                    setSongs(songs.filter((s) => s !== song));
-                                }}
-                            >
-                                Favorite
-                            </Button>
-                        </div>
-                    ))}
-                </div>
-                <div>
-                    <p>Favorite Songs: </p>
-                    {favoriteSongs.map((song, index) => (
-                        <div key={index}>
-                            <p>{song}</p>
-                            <Button
-                                onClick={() => {
-                                    setSongs([...songs, song]);
-                                    setFavoriteSongs(
-                                        favoriteSongs.filter((s) => s !== song),
-                                    );
-                                }}
-                            >
-                                Unfavorite
-                            </Button>
-                        </div>
-                    ))}
-                </div>
-            </div>
-        </div>
+            {/* Define your component */}
+        </div>   
     );
 }

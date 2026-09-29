@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import Button from "react-bootstrap/esm/Button";
+import React from "react";
 
 /*
- * Question 5: Remove Even Numbers
+ * Even Odd
  * 
  * Define a component named EvenOdd. The component stores an array of
  * numbers in state and initially contains:
