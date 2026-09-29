@@ -1,18 +1,30 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 
+/*
+ * Question 5: Remove Even Numbers
+ * 
+ * Define a component named EvenOdd. The component stores an array of
+ * numbers in state and initially contains:
+ * 
+ *  1, 2, 3, 4, 5, 6
+ * 
+ * Display each of the numbers.
+ * Add a button labeled "Remove Evens". When pressed, every even number
+ * should be removed from the list.
+ * 
+ * Add a button labeled "Remove Odds". When pressed, every odd number
+ * should be removed from the list.
+ * 
+ * You may want to include a reset button for testing purposes.
+ */
+
 export default function EvenOdd(): React.JSX.Element {
-    const [list, setList] = useState<number[]>([1,2,3,4,5,6]);
 
     return(
         <div>
             <h2>Even Odd</h2>
-            {list.map((num, index) => (
-                <p key={index}>{num}</p>
-            ))}
-            <Button onClick={() => {setList(list.filter(num => num % 2 !== 0))}}>Remove Even</Button>
-            <Button onClick={() => {setList(list.filter(num => num % 2 === 0))}}>Remove Odd</Button>
-            <Button onClick={() => {setList([1,2,3,4,5,6])}}>Reset</Button>
+            {/* Define your component */}
         </div>
     )
 }
