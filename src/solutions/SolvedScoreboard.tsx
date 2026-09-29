@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 
 interface Player {
     name: string;

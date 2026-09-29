@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 
 export default function SolvedFavoriteSongs(): React.JSX.Element {
     const [songs, setSongs] = useState<string[]>(["Survival Tactics: Joey Bada$$", "peter pan.: Brent Faiyaz", "Distant Lover: Marvin Gaye"]);
