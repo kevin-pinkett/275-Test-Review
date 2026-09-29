@@ -19,7 +19,7 @@ describe("EvenOdd", () => {
 
         fireEvent.click(
             screen.getByRole("button", {
-                name: "Remove Even",
+                name: "Remove Evens",
             }),
         );
 
@@ -37,7 +37,7 @@ describe("EvenOdd", () => {
 
         fireEvent.click(
             screen.getByRole("button", {
-                name: "Remove Odd",
+                name: "Remove Odds",
             }),
         );
 
