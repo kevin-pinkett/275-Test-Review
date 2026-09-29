@@ -4,7 +4,7 @@ import SolvedEvenOdd from "./solutions/SolvedEvenOdd";
 import SolvedFavoriteSongs from "./solutions/SolvedFavoriteSongs";
 import SolvedStudentProfile from "./solutions/SolvedStudentProfile";
 import SolvedScoreboard from "./solutions/SolvedScoreboard";
-import Button from "react-bootstrap/esm/Button";
+import Button from "react-bootstrap/Button";
 import EvenOdd from "./practice/EvenOdd";
 import FavoriteSongs from "./practice/FavoriteSongs";
 import StudentProfile from "./practice/StudentProfile";
