@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import EvenOdd from "./solutions/EvenOdd";
-import FavoriteSongs from "./solutions/FavoriteSongs";
-import StudentProfile from "./solutions/StudentProfile";
-import Scoreboard from "./solutions/Scoreboard";
+import EvenOdd from "./solutions/SolvedEvenOdd";
+import FavoriteSongs from "./solutions/SolvedFavoriteSongs";
+import StudentProfile from "./solutions/SolvedStudentProfile";
+import Scoreboard from "./solutions/SolvedScoreboard";
 import Button from "react-bootstrap/esm/Button";
 
 function App(): React.JSX.Element {
