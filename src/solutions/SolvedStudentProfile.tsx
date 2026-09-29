@@ -9,7 +9,7 @@ interface Student {
 
 }
 
-export default function StudentProfile(): React.JSX.Element {
+export default function SolvedStudentProfile(): React.JSX.Element {
     const [student, setStudent] = useState<Student>({ name: "John Doe", major: "Finance", year: 3, honors: true });
 
     return (

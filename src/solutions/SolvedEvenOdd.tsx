@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/esm/Button";
 
-export default function EvenOdd(): React.JSX.Element {
+export default function SolvedEvenOdd(): React.JSX.Element {
     const [list, setList] = useState<number[]>([1,2,3,4,5,6]);
 
     return(

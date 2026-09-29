@@ -1,10 +1,14 @@
 import React from "react";
 import "./App.css";
-import EvenOdd from "./solutions/EvenOdd";
-import FavoriteSongs from "./solutions/FavoriteSongs";
-import StudentProfile from "./solutions/StudentProfile";
-import Scoreboard from "./solutions/Scoreboard";
+import SolvedEvenOdd from "./solutions/SolvedEvenOdd";
+import SolvedFavoriteSongs from "./solutions/SolvedFavoriteSongs";
+import SolvedStudentProfile from "./solutions/SolvedStudentProfile";
+import SolvedScoreboard from "./solutions/SolvedScoreboard";
 import Button from "react-bootstrap/esm/Button";
+import EvenOdd from "./practice/EvenOdd";
+import FavoriteSongs from "./practice/FavoriteSongs";
+import StudentProfile from "./practice/StudentProfile";
+import Scoreboard from "./practice/Scoreboard";
 
 function App(): React.JSX.Element {
     const [solutionsVisible, setSolutionsVisible] = React.useState<boolean>(false);
@@ -19,19 +23,32 @@ function App(): React.JSX.Element {
             <p>
                 Run <code>npm run test</code> to check against the unit tests
             </p>
-            <Button onClick={() => {setSolutionsVisible(!solutionsVisible)}}>
+            <hr />
+            <EvenOdd />
+            <hr />
+            <FavoriteSongs />
+            <hr />
+            <StudentProfile />
+            <hr />
+            <Scoreboard />
+            <hr />
+            <Button
+                onClick={() => {
+                    setSolutionsVisible(!solutionsVisible);
+                }}
+            >
                 {solutionsVisible ? "Hide Solutions" : "Show Solutions"}
             </Button>
             {solutionsVisible && (
                 <div>
                     <hr />
-                    <EvenOdd />
+                    <SolvedEvenOdd />
                     <hr />
-                    <FavoriteSongs />
+                    <SolvedFavoriteSongs />
                     <hr />
-                    <StudentProfile />
+                    <SolvedStudentProfile />
                     <hr />
-                    <Scoreboard />
+                    <SolvedScoreboard />
                     <hr />
                 </div>
             )}

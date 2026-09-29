@@ -22,7 +22,7 @@ function PlayerDisplay({player, increaseScore}: PlayerProps): React.JSX.Element 
     );
 }
 
-export default function Scoreboard(): React.JSX.Element {
+export default function SolvedScoreboard(): React.JSX.Element {
     const [players, setPlayers] = useState<Player[]>([
         { name: "Alice", score: 10 },
         { name: "Bob", score: 15 },
